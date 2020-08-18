@@ -4,5 +4,45 @@
     padding: 16px;
     display: inline-block;
     width: 25%;
+    position: relative;
+}
 
+.card_colorFirst {
+    background-color: #45aaee
+}
+.card_colorSecond {
+    background-color: #ff1010;
+}
+.card_colorThird{
+    background-color: #76ef40
+}
+.card_colorFourth{
+    background-color:#ebef40;
+}
+.wrap-card-color{
+   position: absolute;
+   top: -16px;
+   left: 0; 
+}
+.card-color {
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    text-indent: -9999px;
+    overflow: hidden;
+    border-radius: 50%;
+    border: 2px solid rgba(0, 0, 0, 0.5);
+    
+}
+.card-color_colorFirst {
+    background-color: #45aaee
+}
+.card-color_colorSecond {
+    background-color: #ff1010;
+}
+.card-color_colorThird{
+    background-color: #76ef40
+}
+.card-color_colorFourth{
+    background-color:#ebef40;
 }
