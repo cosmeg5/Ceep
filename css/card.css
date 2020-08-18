@@ -6,43 +6,76 @@
     width: 25%;
     position: relative;
 }
-
-.card_colorFirst {
+[data-color="first"] {
     background-color: #45aaee
 }
-.card_colorSecond {
+[data-color="second"] {
     background-color: #ff1010;
 }
-.card_colorThird{
+[data-color="third"]{
     background-color: #76ef40
 }
-.card_colorFourth{
+[data-color="fourth"]{
     background-color:#ebef40;
 }
+
 .wrap-card-color{
    position: absolute;
    top: -16px;
    left: 0; 
+   opacity: 0;
+   transition: opacity 0.3s linear;
 }
-.card-color {
+.card:hover .wrap-card-color {
+    opacity: 1;
+}
+.card-excluir {
     display: inline-block;
+    box-sizing: border-box;
     width: 32px;
     height: 32px;
     text-indent: -9999px;
     overflow: hidden;
     border-radius: 50%;
     border: 2px solid rgba(0, 0, 0, 0.5);
-    
+    background-image: url(../img/pngegg.png);
+    background-size: 60%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #fff;
+    cursor: pointer;
 }
-.card-color_colorFirst {
-    background-color: #45aaee
+.card-edit {
+    display: inline-block;
+    box-sizing: border-box;
+    width: 32px;
+    height: 32px;
+    text-indent: -9999px;
+    overflow: hidden;
+    border-radius: 50%;
+    border: 2px solid rgba(0, 0, 0, 0.5);
+    background-image: url(../img/pngfind.com-phone-symbol-png-2755033.png);
+    background-size: 60%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #fff;
+    cursor: pointer;
 }
-.card-color_colorSecond {
-    background-color: #ff1010;
+.text-notes[contenteditable="true"] {
+    outline: 2px double #ddd;
 }
-.card-color_colorThird{
-    background-color: #76ef40
+.card-color {
+    display: inline-block;
+    box-sizing: border-box;
+    width: 32px;
+    height: 32px;
+    text-indent: -9999px;
+    overflow: hidden;
+    border-radius: 50%;
+    border: 2px solid rgba(0, 0, 0, 0.5);
+    cursor: pointer;
 }
-.card-color_colorFourth{
-    background-color:#ebef40;
+
+.card-color.isActive {
+    border-width: 4px;
 }

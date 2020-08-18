@@ -2,17 +2,17 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width, initial-scale=1.0">
+    <meta name="viewport" content="width initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/card.css">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/newcard.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <header class="header container">
         <h1 class="header-title">Ceep</h1>
-
         <nav class="header-menu">
             <ul>
                 <li class="header-button"><a href="">Linhas</a></li>
@@ -21,45 +21,60 @@
         </nav>
     </header>
 
+    <form action="" class="newCard">
+        <textarea class="newCard-content" placeholder="Digite aqui sua nota"></textarea>
+        <input class="newCard-submit" type="submit" value="Salvar">
+    </form>
+
     <section class="container">
-        <ol>
-            <li class="card card_colorFirst">
+        <ol class="wrap-card">
+            <li class="card" data-color="first">
                 <nav class="wrap-card-color"><ul>
-                    <li class="card-color card-color_colorFirst"><a href=""></a>Azul</li>
-                    <li class="card-color card-color_colorSecond"><a href=""></a>Vermelho</li>
-                    <li class="card-color card-color_colorThird"><a href=""></a>verde</li>
-                    <li class="card-color card-color_colorFourth"><a href=""></a>Amarelo</li>
+                    <li class="card-excluir"><a href="">Exclir</a></li>
+                    <li class="card-edit"><a href="">Editar</a></li>
+                    <li class="card-color isActive" data-color="first"><a href=""></a>Azul</li>
+                    <li class="card-color"  data-color="second"><a href=""></a>Vermelho</li>
+                    <li class="card-color"  data-color="third"><a href=""></a>verde</li>
+                    <li class="card-color"  data-color="fourth"><a href=""></a>Amarelo</li>
                 </ul></nav>
-                <p>Texto teste para referencia e testes do meu editor de texto.</p>
+                <p class="text-notes" contenteditable="false">Texto teste para referencia e testes do meu editor de texto.</p>
             </li><!--
-            --><li class="card card_colorSecond">
+            --><li class="card" data-color="second">
                 <nav class="wrap-card-color"><ul>
-                    <li class="card-color card-color_colorFirst"><a href=""></a>Azul</li>
-                    <li class="card-color card-color_colorSecond"><a href=""></a>Vermelho</li>
-                    <li class="card-color card-color_colorThird"><a href=""></a>verde</li>
-                    <li class="card-color card-color_colorFourth"><a href=""></a>Amarelo</li>
+                    <li class="card-excluir"><a href="">Exclir</a></li>
+                    <li class="card-edit"><a href="">Editar</a></li>
+                    <li class="card-color" data-color="first"><a href=""></a>Azul</li>
+                    <li class="card-color isActive"  data-color="second"><a href=""></a>Vermelho</li>
+                    <li class="card-color"  data-color="third"><a href=""></a>verde</li>
+                    <li class="card-color"  data-color="fourth"><a href=""></a>Amarelo</li>
                 </ul></nav>
-                <p>Texto teste para referencia e testes do meu editor de texto.</p>
+                <p class="text-notes" contenteditable="false">Texto teste para referencia e testes do meu editor de texto.</p>
             </li><!--
-            --><li class="card card_colorThird">
+            --><li class="card" data-color="third">
                 <nav class="wrap-card-color"><ul>
-                    <li class="card-color card-color_colorFirst"><a href=""></a>Azul</li>
-                    <li class="card-color card-color_colorSecond"><a href=""></a>Vermelho</li>
-                    <li class="card-color card-color_colorThird"><a href=""></a>verde</li>
-                    <li class="card-color card-color_colorFourth"><a href=""></a>Amarelo</li> 
+                    <li class="card-excluir"><a href="">Exclir</a></li>
+                    <li class="card-edit"><a href="">Editar</a></li>
+                    <li class="card-color" data-color="first"><a href=""></a>Azul</li>
+                    <li class="card-color"  data-color="second"><a href=""></a>Vermelho</li>
+                    <li class="card-color isActive"  data-color="third"><a href=""></a>verde</li>
+                    <li class="card-color"  data-color="fourth"><a href=""></a>Amarelo</li>
                 </ul></nav>
-                <p>Texto teste para referencia e testes do meu editor de texto.</p>
+                <p class="text-notes" contenteditable="false">Texto teste para referencia e testes do meu editor de texto.</p>
             </li><!--
-            --><li class="card card_colorFourth">
+            --><li class="card" data-color="fourth">
                 <nav class="wrap-card-color"><ul>
-                    <li class="card-color card-color_colorFirst"><a href=""></a>Azul</li>
-                    <li class="card-color card-color_colorSecond"><a href=""></a>Vermelho</li>
-                    <li class="card-color card-color_colorThird"><a href=""></a>verde</li>
-                    <li class="card-color card-color_colorFourth"><a href=""></a>Amarelo</li> 
+                    <li class="card-excluir"><a href="">Exclir</a></li>
+                    <li class="card-edit"><a href="">Editar</a></li>
+                    <li class="card-color" data-color="first"><a href=""></a>Azul</li>
+                    <li class="card-color"  data-color="second"><a href=""></a>Vermelho</li>
+                    <li class="card-color"  data-color="third"><a href=""></a>verde</li>
+                    <li class="card-color isActive"  data-color="fourth"><a href=""></a>Amarelo</li> 
                 </ul></nav>
-                <p>Texto teste para referencia e testes do meu editor de texto.</p>
+                <p class="text-notes" contenteditable="false">Texto teste para referencia e testes do meu editor de texto.</p>
             </li>
         </ol>
-    </section>
+    </section>  
+    <script src="js/block/newcard.js"></script>
+    <script src="js/block/card.js"></script>
 </body>
 </html>

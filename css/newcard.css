@@ -1,0 +1,28 @@
+.newCard {
+    background-color: #c5c5c5;
+   padding: 24px 127px; 
+   margin-bottom: 40px;
+}
+.newCard-content {
+    display: block;
+    margin: auto;
+    width: 560px;
+    height: 24px;
+    border: 1px solid #fff;
+    transition: height 0.3s linear,
+                border-color 0.5s linear;
+}
+.newCard-content:focus {
+    height: 150px;
+    border: 2px solid #5555;
+}
+.newCard-submit {
+    display: block;
+    margin: auto;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    width: 84px;
+    height: 34px;
+    background-color: #8272c7;
+    cursor: pointer;
+}
